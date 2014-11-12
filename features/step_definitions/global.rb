@@ -9,3 +9,7 @@ end
 And(/^I fill in "([^"]*)" as "([^"]*)"$/) do |text, field_name|
   fill_in field_name, with: text
 end
+
+Then(/^I should not see "([^"]*)"$/) do |text|
+  expect(page).not_to have_content text
+end

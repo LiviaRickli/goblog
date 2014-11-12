@@ -8,17 +8,13 @@ Feature:
     When I go to the blogs page
 
     Then I should see "livia"
-    Then I should see "nieuwe blog"
+    And I should see "nieuwe blog"
 
   Scenario: Add a new blog
-
     When I go to the blogs page
     And I click on link "Add a new blog"
 
-    Then I should see "Title"
-    And I should see "Text"
-
-    When I fill in "nieuwe blog" as "Title"
+    Then I fill in "nieuwe blog" as "Title"
     And I fill in "Dit is mijn nieuwe blog" as "Text"
     And I click on link "Save Article"
 
@@ -35,3 +31,11 @@ Feature:
     And I click on link "Save Article"
 
     Then I should see "jankees"
+
+  Scenario: Delete an existing blog
+    Given an existing blog with the title "jankees"
+
+    When I go to the blogs page
+    And I click on link "Delete"
+
+    Then I should not see "jankees"
