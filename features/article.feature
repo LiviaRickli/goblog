@@ -16,7 +16,7 @@ Feature:
 
     Then I fill in "nieuwe blog" as "Title"
     And I fill in "Dit is mijn nieuwe blog" as "Text"
-    And I click on link "Save Article"
+    And I click on link "Save Blog"
 
     Then I should see "nieuwe blog"
     And I should see "Dit is mijn nieuwe blog"
@@ -28,7 +28,7 @@ Feature:
     And I click on link "Edit"
 
     Then I fill in "jankees" as "Title"
-    And I click on link "Save Article"
+    And I click on link "Save Blog"
 
     Then I should see "jankees"
 
