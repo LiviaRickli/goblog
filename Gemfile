@@ -9,6 +9,7 @@ gem "jbuilder", "~> 2.0"
 gem "spring", group: :development
 gem "sqlite3"
 gem "rails-assets-underscore"
+gem "devise"
 
 group :test do
   gem "cucumber-rails", :require => false
