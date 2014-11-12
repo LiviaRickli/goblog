@@ -8,6 +8,7 @@ Feature:
     When I go to the blogs page
 
     Then I should see "livia"
+    Then I should see "nieuwe blog"
 
   Scenario: Add a new blog
 
@@ -17,6 +18,9 @@ Feature:
     Then I should see "Title"
     And I should see "Text"
 
-    Then I fill in "nieuwe blog" as "Title"
+    When I fill in "nieuwe blog" as "Title"
     And I fill in "Dit is mijn nieuwe blog" as "Text"
     And I click on link "Save Article"
+
+    Then I should see "nieuwe blog"
+    And I should see "Dit is mijn nieuwe blog"
