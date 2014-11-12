@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :articles
+  resources :blogs
 
   root 'welcome_page#index'
 end

@@ -1,19 +1,19 @@
 <div class="form-wrapper">
   <div class="header">
     <h1>Your blog</h1>
-    <%= link_to 'Go back to all blogs', articles_path %>
+    <%= link_to 'Go back to all blogs', blogs_path %>
   </div>
   <div class="edit-button">
-    <%= link_to 'Edit', edit_article_path(@article) %>
+    <%= link_to 'Edit', edit_blog_path(@blog) %>
   </div>
   <div class="body-wrapper-show">
 <h2>Title</h2>
 <p>
-  <%= @article.title %>
+  <%= @blog.title %>
 </p>
 <h2>Text</h2>
 <p>
-  <%= @article.text %>
+  <%= @blog.text %>
 </p>
 </div>
 </div>

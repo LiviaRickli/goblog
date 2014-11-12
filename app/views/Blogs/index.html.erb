@@ -9,7 +9,7 @@
       <th><h2>Titles</h2></th>
       <th colspan=3"></th>
     </tr>
-    <% @articles.each do |article| %>
+    <% @blogs.each do |article| %>
         <tr>
           <td><%= article.title %></td>
           <td class="colspan"><%= link_to 'Show', article_path(article) %></td>
