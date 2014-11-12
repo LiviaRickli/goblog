@@ -24,3 +24,14 @@ Feature:
 
     Then I should see "nieuwe blog"
     And I should see "Dit is mijn nieuwe blog"
+
+  Scenario: Edit an existing blog
+    Given an existing blog with the title "livia"
+
+    When I go to the blogs page
+    And I click on link "Edit"
+
+    Then I fill in "jankees" as "Title"
+    And I click on link "Save Article"
+
+    Then I should see "jankees"
